@@ -1,18 +1,6 @@
-class Angle {
-    private angle: number;
+import { Angle } from './trig/Angle';
 
-    constructor(_angle: number) {
-        this.angle = _angle;
-    }
+console.log('Hello typescript!');
 
-    public radians(): number {
-        return this.angle;
-    }
-
-    
-}
-
-console.log("Hello typescript!");
-
-const a = new Angle(Math.PI/2.0);
+const a = new Angle(Math.PI / 2.0);
 console.log(a.radians());
