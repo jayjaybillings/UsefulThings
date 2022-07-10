@@ -6,7 +6,7 @@ describe('test function', () => {
   let testAngle = new Angle();
 
   // Angle.radians() test
-  it('should return pi/2 for Angle.radians()', () => {
+  it('should return 0.0 and then pi/2 for Angle.radians()', () => {
     // Check that the initial value is 0.0 rad
     expect(testAngle.get()).toBe(0.0);
 
