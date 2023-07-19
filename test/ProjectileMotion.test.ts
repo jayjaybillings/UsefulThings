@@ -1,18 +1,15 @@
 //ProjectileMotion.test.ts
 
-import { ProjectileMotion } from '../src/projectile_motion/ProjectileMotion';
+import { standardGravitationalAcceleration } from '../src/projectile_motion/ProjectileMotion';
+import { MechanicalConstants } from '../src/MechanicalConstants';
 
-describe('Constant gravitational acceleration should equal g', () => {
-  let testAngle = new Angle();
+describe('Projectile motion tests', () => {
+  let a = standardGravitationalAcceleration();
 
-  // Angle.radians() test
-  it('should return 0.0 and then pi/2 for Angle.radians()', () => {
-    // Check that the initial value is 0.0 rad
-    expect(testAngle.get()).toBe(0.0);
-
-    // Check radians(Math.PI/2.0) sets the value appropriately
-    testAngle.set(Math.PI / 2.0);
-    expect(testAngle.get()).toBe(Math.PI / 2.0);
+  // Standard gravitational acceleration test
+  it('Constant acceleration in standard gravity should equal -g', () => {
+    // Check that the result is g
+    expect(a).toBe(-1.0 * MechanicalConstants);
   });
 
   // Angle.degress() test
