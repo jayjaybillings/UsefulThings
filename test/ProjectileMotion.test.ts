@@ -9,8 +9,6 @@ describe('Projectile motion tests', () => {
   // Standard gravitational acceleration test
   it('Constant acceleration in standard gravity should equal -g', () => {
     // Check that the result is g
-    expect(a).toBe(-1.0 * MechanicalConstants);
+    expect(a).toBe(-1.0 * MechanicalConstants.g);
   });
-
-  // Angle.degress() test
 });
