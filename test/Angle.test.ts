@@ -1,6 +1,6 @@
 //Angle.test.ts
 
-import { Angle } from '../../src/trig/Angle';
+import { Angle } from '../src/trig/Angle';
 
 describe('test function', () => {
   let testAngle = new Angle();

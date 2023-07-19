@@ -1,8 +1,8 @@
 //ProjectileMotion.test.ts
 
-import { ProjectileMotion } from '../../src/projectile_motion/ProjectileMotion';
+import { ProjectileMotion } from '../src/projectile_motion/ProjectileMotion';
 
-describe('test function', () => {
+describe('Constant gravitational acceleration should equal g', () => {
   let testAngle = new Angle();
 
   // Angle.radians() test
