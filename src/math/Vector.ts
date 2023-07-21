@@ -12,15 +12,15 @@ export interface Vector {
 export class BaseVector implements Vector {
 
   add(vec: Vector): Vector {
-    return null;
+    return new BaseVector();
   }
 
   subtract(vec: Vector): Vector {
-    return null;
+    return new BaseVector();
   }
 
   dot(vec: Vector): Vector {
-    return null;
+    return new BaseVector();
   }
 
 }
